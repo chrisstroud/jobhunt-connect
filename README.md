@@ -21,7 +21,7 @@ with `Authorization: Bearer <key>`; create one in JobHunt and keep it out of any
 | Claude Code | `claude mcp add --scope project --transport http jobhunt https://jobhunt.app/mcp`, then `/mcp` and Authenticate ([`snippets/claude-code.mcp.json`](snippets/claude-code.mcp.json)) | Verified 2026-11-19 (2.1.328): signed in, 39 tools listed, read, save and delete calls worked |
 | GitHub Copilot CLI | `copilot mcp add --transport http jobhunt https://jobhunt.app/mcp`, then `/mcp`, jobhunt, Authenticate inside the CLI ([`snippets/copilot-cli.mcp-config.json`](snippets/copilot-cli.mcp-config.json)) | Verified 2026-11-19 (1.0.114): signed in, 39 tools listed, read, save and delete calls worked |
 | Cursor CLI | [`snippets/cursor.mcp.json`](snippets/cursor.mcp.json) as `.cursor/mcp.json`, then `cursor-agent mcp login jobhunt` | Verified to the level "connected, tools listed (39)" on 2026-11-19 (2026.11.19-f005e9d); tool calls not tested |
-| OpenCode | `opencode mcp add jobhunt --url https://jobhunt.app/mcp`, then `opencode mcp auth jobhunt` ([`snippets/opencode.json`](snippets/opencode.json)) | Verified to the level "connected, tools listed (39)" on 2026-11-19 (2.3.2); tool calls not tested. To sign in again, run `opencode mcp logout jobhunt` first |
+| OpenCode | `opencode mcp add jobhunt --url https://jobhunt.app/mcp`, then `opencode mcp auth jobhunt` ([`snippets/opencode.json`](snippets/opencode.json)) | Connected, not Live: tested to "connected, tools listed (39)" on 2026-11-19 (2.3.2); tool calls not tested. Signing in a second time fails with `invalid_request` (the stored client is reused on a new local port); run `opencode mcp logout jobhunt` first |
 | Cursor directory and other plugin catalogs | The root [`plugin.json`](plugin.json) and [`.mcp.json`](.mcp.json) (the Agent Plugins layout), and [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json) for Cursor's plugin template. Submit this repository's address to the catalog | Both manifests were checked against the published Agent Plugins schemas; not tested in Cursor's editor or in any catalog |
 | Cursor (editor install link) | [Install in Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=jobhunt&config=eyJ1cmwiOiJodHRwczovL2pvYmh1bnQuYXBwL21jcCJ9) | Untested |
 | VS Code | [Install in VS Code](vscode:mcp/install?%7B%22name%22%3A%22jobhunt%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//jobhunt.app/mcp%22%7D) or the snippet below | Untested |
@@ -31,7 +31,7 @@ with `Authorization: Bearer <key>`; create one in JobHunt and keep it out of any
 | Zed | snippet below | Untested |
 | LM Studio | `mcp.json` snippet below | Untested |
 
-**What "verified" means here.** The five verified rows were tried on 2026-11-19 against a local test copy of JobHunt, not
+**What "verified" means here.** The verified rows (and OpenCode) were tried on 2026-11-19 against a local test copy of JobHunt, not
 against jobhunt.app; the snippets use the production address `https://jobhunt.app/mcp`. Each row says how far the test went and
 nothing more. Every other row is untested in its product. Install links decode to a remote-URL config only
 (`{"url":"https://jobhunt.app/mcp"}`); check that before you accept one. See [`snippets/`](snippets) for copyable files.
