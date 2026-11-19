@@ -1,0 +1,5 @@
+{
+  "url": "https://jobhunt.app/mcp",
+  "transport": "streamable-http",
+  "auth": "oauth"
+}
