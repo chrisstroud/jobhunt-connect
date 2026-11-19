@@ -1,0 +1,6 @@
+# Continue configuration. Needs the jobhunt command with the mcp command, and: jobhunt auth login
+mcpServers:
+  - name: jobhunt
+    command: jobhunt
+    args:
+      - mcp
