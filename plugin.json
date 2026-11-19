@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "jobhunt",
+  "version": "1.0.0",
+  "description": "Run your job search from your AI assistant: save jobs, tailor resumes, track applications.",
+  "author": {
+    "name": "JobHunt App, Inc."
+  },
+  "homepage": "https://jobhunt.app",
+  "repository": "https://github.com/chrisstroud/jobhunt-connect",
+  "license": "MIT",
+  "keywords": ["job-search", "jobs", "resume", "career", "applications", "interviews", "productivity"]
+}
