@@ -1,0 +1,10 @@
+{
+  "mcp": {
+    "servers": {
+      "jobhunt": {
+        "type": "remote",
+        "url": "https://jobhunt.app/mcp"
+      }
+    }
+  }
+}
