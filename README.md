@@ -15,18 +15,24 @@ with `Authorization: Bearer <key>`; create one in JobHunt and keep it out of any
 
 ## Add it to your tools
 
-| Product | How |
-| --- | --- |
-| Cursor | [Install in Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=jobhunt&config=eyJ1cmwiOiJodHRwczovL2pvYmh1bnQuYXBwL21jcCJ9) or the snippet below |
-| VS Code | [Install in VS Code](vscode:mcp/install?%7B%22name%22%3A%22jobhunt%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//jobhunt.app/mcp%22%7D) or the snippet below |
-| Kiro | [Add to Kiro](https://kiro.dev/launch/mcp/add?name=jobhunt&config=%7B%22url%22%3A%22https%3A//jobhunt.app/mcp%22%7D) |
-| Claude | Settings, Connectors, add a custom connector, address `https://jobhunt.app/mcp` |
-| Gemini CLI | `gemini mcp add --transport http jobhunt https://jobhunt.app/mcp` |
-| Zed | snippet below |
-| LM Studio | `mcp.json` snippet below |
-| Claude Code | `claude mcp add --transport http jobhunt https://jobhunt.app/mcp` |
+| Product | How | Status |
+| --- | --- | --- |
+| Codex CLI | [`snippets/codex.config.toml`](snippets/codex.config.toml), then `codex mcp login jobhunt` | Verified 2026-11-19 (0.170.0): signed in, 39 tools listed, read, save and delete calls worked |
+| Claude Code | `claude mcp add --scope project --transport http jobhunt https://jobhunt.app/mcp`, then `/mcp` and Authenticate ([`snippets/claude-code.mcp.json`](snippets/claude-code.mcp.json)) | Verified 2026-11-19 (2.1.328): signed in, 39 tools listed, read, save and delete calls worked |
+| GitHub Copilot CLI | `copilot mcp add --transport http jobhunt https://jobhunt.app/mcp`, then `/mcp`, jobhunt, Authenticate inside the CLI ([`snippets/copilot-cli.mcp-config.json`](snippets/copilot-cli.mcp-config.json)) | Verified 2026-11-19 (1.0.114): signed in, 39 tools listed, read, save and delete calls worked |
+| Cursor CLI | [`snippets/cursor.mcp.json`](snippets/cursor.mcp.json) as `.cursor/mcp.json`, then `cursor-agent mcp login jobhunt` | Verified to the level "connected, tools listed (39)" on 2026-11-19 (2026.11.19-f005e9d); tool calls not tested |
+| OpenCode | `opencode mcp add jobhunt --url https://jobhunt.app/mcp`, then `opencode mcp auth jobhunt` ([`snippets/opencode.json`](snippets/opencode.json)) | Verified to the level "connected, tools listed (39)" on 2026-11-19 (2.3.2); tool calls not tested. To sign in again, run `opencode mcp logout jobhunt` first |
+| Cursor (editor install link) | [Install in Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=jobhunt&config=eyJ1cmwiOiJodHRwczovL2pvYmh1bnQuYXBwL21jcCJ9) | Untested |
+| VS Code | [Install in VS Code](vscode:mcp/install?%7B%22name%22%3A%22jobhunt%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//jobhunt.app/mcp%22%7D) or the snippet below | Untested |
+| Kiro | [Add to Kiro](https://kiro.dev/launch/mcp/add?name=jobhunt&config=%7B%22url%22%3A%22https%3A//jobhunt.app/mcp%22%7D) | Untested |
+| Claude (web) | Settings, Connectors, add a custom connector, address `https://jobhunt.app/mcp` | Untested here |
+| Gemini CLI | `gemini mcp add --transport http jobhunt https://jobhunt.app/mcp` | Untested |
+| Zed | snippet below | Untested |
+| LM Studio | `mcp.json` snippet below | Untested |
 
-**Status of these snippets: none has been tested in its product yet.** Install links decode to a remote-URL config only
+**What "verified" means here.** The five verified rows were tried on 2026-11-19 against a local test copy of JobHunt, not
+against jobhunt.app; the snippets use the production address `https://jobhunt.app/mcp`. Each row says how far the test went and
+nothing more. Every other row is untested in its product. Install links decode to a remote-URL config only
 (`{"url":"https://jobhunt.app/mcp"}`); check that before you accept one. See [`snippets/`](snippets) for copyable files.
 
 ## The tools

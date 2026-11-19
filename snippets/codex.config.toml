@@ -1,0 +1,4 @@
+# ~/.codex/config.toml
+[mcp_servers.jobhunt]
+url = "https://jobhunt.app/mcp"
+# then run: codex mcp login jobhunt
