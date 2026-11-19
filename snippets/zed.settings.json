@@ -1,0 +1,7 @@
+{
+  "context_servers": {
+    "jobhunt": {
+      "url": "https://jobhunt.app/mcp"
+    }
+  }
+}
