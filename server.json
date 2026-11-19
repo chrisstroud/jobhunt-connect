@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.chrisstroud/jobhunt",
+  "name": "app.jobhunt/jobhunt",
   "title": "JobHunt",
-  "description": "Your job search workspace for your AI assistant: jobs, tasks, interviews, documents and a Hunt Page.",
+  "description": "Run your job search from your AI assistant: save jobs, tailor resumes, track applications.",
   "version": "1.0.0",
   "websiteUrl": "https://jobhunt.app",
   "repository": {
