@@ -1,0 +1,11 @@
+{
+  "name": "jobhunt",
+  "displayName": "JobHunt",
+  "version": "1.0.0",
+  "description": "Run your job search from your AI assistant: save jobs, tailor resumes, track applications.",
+  "author": {
+    "name": "JobHunt App, Inc."
+  },
+  "license": "MIT",
+  "keywords": ["job-search", "jobs", "resume", "career", "applications", "interviews", "productivity"]
+}
