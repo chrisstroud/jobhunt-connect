@@ -1,0 +1,9 @@
+{
+  "mcp": {
+    "jobhunt": {
+      "type": "remote",
+      "url": "https://jobhunt.app/mcp",
+      "enabled": true
+    }
+  }
+}

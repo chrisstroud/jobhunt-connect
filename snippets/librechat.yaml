@@ -1,0 +1,7 @@
+# librechat.yaml
+mcpServers:
+  jobhunt:
+    type: streamable-http
+    url: https://jobhunt.app/mcp
+    requiresOAuth: true   # required: without it LibreChat does not find the sign-in
+    startup: false
