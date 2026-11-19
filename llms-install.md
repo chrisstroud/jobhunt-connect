@@ -33,7 +33,7 @@ No API key or token is needed for the normal setup.
 
 ## If sign-in does not start
 
-The setup was written from Cline's published documentation and has not been tested in Cline yet. If Cline does not open a
+The config entry was checked on 19 November 2026: the JSON parses, `https://jobhunt.app/mcp` answers an unsigned request with 401 and a pointer to its OAuth sign-in metadata, and that metadata is served. It has not been run inside Cline itself. If Cline does not open a
 sign-in page for remote servers, use the CLI wizard's **Authorize OAuth** option for the server, if your Cline version has it.
 Otherwise tell the person that this Cline version cannot sign in to JobHunt yet; do not work around it by asking them to paste
 credentials.
