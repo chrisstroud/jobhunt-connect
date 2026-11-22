@@ -1,0 +1,25 @@
+{
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "servers": [
+    {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "jobhunt@0.1.3",
+        "mcp"
+      ],
+      "env": {
+        "DBUS_SESSION_BUS_ADDRESS": "${input:dbus-session-bus-address}"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "dbus-session-bus-address",
+      "type": "promptString",
+      "description": "Linux only: the address of your desktop session bus, so the jobhunt command can read your saved sign-in from the system keyring. Press Enter to use DBUS_SESSION_BUS_ADDRESS from your terminal. On macOS and Windows, press Enter",
+      "password": false
+    }
+  ]
+}
