@@ -1,5 +1,7 @@
 # JobHunt connect
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/chrisstroud/jobhunt-connect)
+
 Connect your AI assistant to [JobHunt](https://jobhunt.app), a job search workspace: saved jobs, tasks, interviews,
 documents and your Hunt Page. This repository holds **only** connection docs, config snippets and registry metadata.
 It contains no server code. JobHunt's server is not open source; the [`jobhunt` command line](https://github.com/chrisstroud/jobhunt-cli) is.
