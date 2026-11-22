@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "jobhunt": {
+      "type": "streamableHttp",
+      "url": "https://jobhunt.app/mcp",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
