@@ -42,7 +42,7 @@ nothing more. Every other row is untested in its product. Install links decode t
 
 ## The tools
 
-JobHunt offers 39 tools. Reads change nothing. Anything that changes your account is a separate tool that the assistant
+JobHunt offers 40 tools. Reads change nothing. Anything that changes your account is a separate tool that the assistant
 calls only when you ask, and nothing here contacts an employer or submits an application for you.
 
 | Tool | Does | What |
@@ -80,6 +80,7 @@ calls only when you ask, and nothing here contacts an employer or submits an app
 | `save_job` | changes | Save a job the person wants to track. |
 | `save_task` | changes | Create a follow-up or reminder, or change an existing one's title, due date or notes. |
 | `search` | reads | Find saved jobs, documents, contacts, companies, tasks, Hunts and highlights by name, company, title, a job's link or a highlight's text, when the person names something ("the Northwind job") and you do not hold its id. |
+| `send_support_message` | changes | Send the JobHunt team a note from the person: a bug, idea, question or billing matter. Only when they ask or agree after the assistant offers; answers go to their account email. |
 | `set_hunt_page_visibility` | changes | Publish the Hunt Page or take it down. |
 | `share_document` | changes | Create or revoke the share link for one document or one job's documents. |
 | `tailor_resume_for_job` | changes | Start tailoring a resume to one saved job. |
@@ -101,4 +102,6 @@ MIT, Copyright (c) 2026 JobHunt App, Inc. The licence covers the documents and s
 
 ## Not listed yet
 
-This repository is not a listing in any directory. A directory is named here as "Listed in" only after it has accepted JobHunt.
+This repository is not itself a listing. A directory is named here as "Listed in" only after it has accepted JobHunt.
+
+Listed in: [mcpservers.org](https://mcpservers.org/servers/chrisstroud/jobhunt-connect), accepted on 20 November 2026.
