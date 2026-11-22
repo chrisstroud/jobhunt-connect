@@ -42,7 +42,7 @@ No API key or token is needed for the normal setup.
 
 ## If sign-in does not start
 
-Tested on 20 November 2026 with the Cline command line (3.0.74) against a test copy of JobHunt: the `cline mcp add` command above, then `cline mcp`, **Authorize OAuth**, jobhunt, signed in; the tools listed and read, save and delete calls worked. A settings file written by hand to the path above was not signed in or called in Cline, and the Cline extension for VS Code was not tried. If Cline has no **Authorize OAuth** option for the server, tell the person that this Cline version cannot sign in to JobHunt yet; do not work around it by asking them to paste credentials.
+Tested on 20 November 2026 with the Cline command line (3.0.74) against a test copy of JobHunt: the `cline mcp add` command above, then `cline mcp`, **Authorize OAuth**, jobhunt, signed in; the tools listed and read, save and delete calls worked. On 22 November 2026 a fresh Cline command line given only this file and the README wrote the settings file at the path above, and sign-in and the same calls worked. The Cline extension for VS Code was not tried. If Cline has no **Authorize OAuth** option for the server, tell the person that this Cline version cannot sign in to JobHunt yet; do not work around it by asking them to paste credentials.
 
 ## What JobHunt can do
 
